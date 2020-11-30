@@ -1,0 +1,9 @@
+<h2>New User</h2>
+
+<%= form_for @spotter do |f| %>
+  First Name: <%= f.text_field :first_name %><br>
+  Last Name: <%= f.text_field :last_name %><br>
+  Username: <%= f.text_field :username %><br>
+
+  <%= f.submit %>
+<% end %>
