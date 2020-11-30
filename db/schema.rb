@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_30_195259) do
+ActiveRecord::Schema.define(version: 2020_11_30_195120) do
 
   create_table "pictures", force: :cascade do |t|
     t.string "description"
@@ -18,18 +18,13 @@ ActiveRecord::Schema.define(version: 2020_11_30_195259) do
     t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["spotter_id"], name: "index_pictures_on_spotter_id"
   end
 
   create_table "spotters", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "users", force: :cascade do |t|
     t.string "username"
-    t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
