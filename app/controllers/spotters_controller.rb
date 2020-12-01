@@ -1,8 +1,4 @@
 class SpottersController < ApplicationController
-  # def new
-  #   @spotter = Spotter.new
-  # end
-
   def index
     spotters = Spotter.all
     if spotters

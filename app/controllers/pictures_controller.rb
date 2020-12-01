@@ -1,12 +1,4 @@
 class PicturesController < ApplicationController
-  # def new
-  # end
-
-  # def create
-  #   picture = Picture.new(picture_params)
-  #   picture.save
-  # end
-
   def show
     picture = Picture.find_by(params[:id])
     if picture
@@ -24,9 +16,4 @@ class PicturesController < ApplicationController
       render json: pictures, except: [:created_at, :updated_at]
     end
   end
-
-  private
-    # def picture_params
-    #   params.require(:picture).permit(:description, :spotter_id, :img_url)
-    # end
 end
