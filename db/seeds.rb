@@ -18,11 +18,12 @@ Spotter.create(first_name: "Pat", last_name: "Machado", username: "Pat")
 
 
 
+=======
 
 
 pictures = Picture.create([
   { 
-    description: "CR200 (Devils Chariot TM) gated at MSP",
+    description: "CR200 (Devils Chariot) gated at MSP",
     spotter_id: 1,
     img_url: "https://thepointsguy.com/wp-content/uploads/2017/02/IMG-MSP-Observation-Deck.jpg"
   },
@@ -140,6 +141,18 @@ pictures = Picture.create([
     description: "Alaskan 737 at SMF",
     spotter_id: 6,
     img_url: "https://bryanallo.files.wordpress.com/2016/07/2016_aircraftspotting_smf_alaska8.jpg?w=1400"
+=======
+  },
+  {
+    description: "Deltas last Queen - 747-400 ",
+    spotter_id: 2,
+    img_url: "https://i.pinimg.com/564x/8a/09/98/8a0998b239260d380571bd415519d638.jpg"
+  },
+  {
+    description: "Emirates A380, Coming in Hot and Heavy at LAX #3 ",
+    spotter_id: 1,
+    img_url: "https://uploads-ssl.webflow.com/5e21095855fb4294cb9a5831/5e2ccc3d12d935f91de92d8b_plane-spotting-lax-in-n-out-p-2000.jpeg"
+
   }
   {
     description: "China southern Dreamliner landing at SFO",
